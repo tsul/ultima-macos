@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84468EF3257F5FCD00C49414 /* Textures.m in Sources */ = {isa = PBXBuildFile; fileRef = 84468EF2257F5FCD00C49414 /* Textures.m */; };
+		844EBA16257ED35300ABDE1C /* TileData.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA15257ED35300ABDE1C /* TileData.m */; };
+		844EBA1A257ED3E000ABDE1C /* tiledata.mul in Resources */ = {isa = PBXBuildFile; fileRef = 844EBA19257ED3E000ABDE1C /* tiledata.mul */; };
+		844EBA26257EE22800ABDE1C /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 844EBA25257EE22800ABDE1C /* Object.m */; };
+		8460E4FB257B077A00F1449C /* IndexedMULReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460E4FA257B077A00F1449C /* IndexedMULReader.m */; };
+		8460E500257B0C3400F1449C /* LandArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460E4FF257B0C3400F1449C /* LandArt.m */; };
+		8460E508257B1A6600F1449C /* texmaps.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8460E507257B1A6600F1449C /* texmaps.mul */; };
+		8460E50B257B1A7000F1449C /* texidx.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8460E50A257B1A7000F1449C /* texidx.mul */; };
+		846DE2572584C733008D40F1 /* Hues.m in Sources */ = {isa = PBXBuildFile; fileRef = 846DE2562584C733008D40F1 /* Hues.m */; };
+		8475A126257B26FA00F43514 /* ItemArt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475A125257B26FA00F43514 /* ItemArt.m */; };
+		8475A12A257B2B6100F43514 /* art.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8475A129257B2B6100F43514 /* art.mul */; };
+		8475A12D257B2B6F00F43514 /* artidx.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8475A12C257B2B6F00F43514 /* artidx.mul */; };
+		8475A136257C7D3F00F43514 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475A135257C7D3F00F43514 /* Map.m */; };
+		8475A13A257CB12B00F43514 /* map0.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8475A139257CB12B00F43514 /* map0.mul */; };
+		8475A13F257CEB5800F43514 /* staidx0.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8475A13E257CEB5800F43514 /* staidx0.mul */; };
+		8475A142257CEB6300F43514 /* statics0.mul in Resources */ = {isa = PBXBuildFile; fileRef = 8475A141257CEB6300F43514 /* statics0.mul */; };
+		847625F82584C80C00B6B870 /* hues.mul in Resources */ = {isa = PBXBuildFile; fileRef = 847625F72584C80C00B6B870 /* hues.mul */; };
+		847B4B7D2582D0AE00D54AE0 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 847B4B7C2582D0AE00D54AE0 /* Character.m */; };
+		849BB91D257AEA0E00F6F97A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BB91C257AEA0E00F6F97A /* AppDelegate.m */; };
+		849BB920257AEA0E00F6F97A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BB91F257AEA0E00F6F97A /* ViewController.m */; };
+		849BB922257AEA0F00F6F97A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849BB921257AEA0F00F6F97A /* Assets.xcassets */; };
+		849BB925257AEA0F00F6F97A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849BB923257AEA0F00F6F97A /* Main.storyboard */; };
+		849BB928257AEA0F00F6F97A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BB927257AEA0F00F6F97A /* main.m */; };
+		849BB932257AED0600F6F97A /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BB931257AED0600F6F97A /* Renderer.m */; };
+		849BB93A257AF99F00F6F97A /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 849BB939257AF99F00F6F97A /* Shaders.metal */; };
+		84CA60AB2584CA01006C5369 /* map1.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60AA2584CA01006C5369 /* map1.mul */; };
+		84CA60AE2584D1E3006C5369 /* radarcol.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60AD2584D1E3006C5369 /* radarcol.mul */; };
+		84CA60B22584D208006C5369 /* RadarColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA60B12584D208006C5369 /* RadarColors.m */; };
+		84CA60B725855BF0006C5369 /* anim.idx in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60B625855BF0006C5369 /* anim.idx */; };
+		84CA60BC258563D9006C5369 /* BodyAnimationFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA60BB258563D9006C5369 /* BodyAnimationFrame.m */; };
+		84CA60C22585B2A3006C5369 /* Bodyconv.def in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60C12585B2A3006C5369 /* Bodyconv.def */; };
+		84CA60C62585B3C4006C5369 /* BodyConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA60C52585B3C4006C5369 /* BodyConversion.m */; };
+		84CA60CC2585D799006C5369 /* anim2.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60CA2585D799006C5369 /* anim2.mul */; };
+		84CA60CD2585D799006C5369 /* anim2.idx in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60CB2585D799006C5369 /* anim2.idx */; };
+		84CA60D12585D7A3006C5369 /* anim3.idx in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60CF2585D7A2006C5369 /* anim3.idx */; };
+		84CA60D22585D7A3006C5369 /* anim3.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60D02585D7A3006C5369 /* anim3.mul */; };
+		84CA60D62585D7B3006C5369 /* anim4.idx in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60D42585D7B0006C5369 /* anim4.idx */; };
+		84CA60D72585D7B3006C5369 /* anim4.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60D52585D7B3006C5369 /* anim4.mul */; };
+		84CA60DB2585D7BB006C5369 /* anim5.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60D92585D7BB006C5369 /* anim5.mul */; };
+		84CA60DC2585D7BB006C5369 /* anim5.idx in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60DA2585D7BB006C5369 /* anim5.idx */; };
+		84CA60E02585DE5A006C5369 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA60DF2585DE5A006C5369 /* Animation.m */; };
+		84CA60E92586F72D006C5369 /* ItemAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA60E82586F72D006C5369 /* ItemAnimation.m */; };
+		84CA60F2258703E9006C5369 /* animdata.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84CA60F1258703E9006C5369 /* animdata.mul */; };
+		84DFF2042583E4A100A94D78 /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFF2032583E4A100A94D78 /* Font.m */; };
+		84E86353258068BB006FC995 /* UnicodeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E86352258068BB006FC995 /* UnicodeFont.m */; };
+		84E8635825806D1F006FC995 /* BodyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8635725806D1F006FC995 /* BodyAnimation.m */; };
+		84E8636025806F52006FC995 /* anim.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8635F25806F52006FC995 /* anim.mul */; };
+		84E8636325806F60006FC995 /* fonts.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636225806F60006FC995 /* fonts.mul */; };
+		84E8637E25806F74006FC995 /* unifont9.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636525806F74006FC995 /* unifont9.mul */; };
+		84E8637F25806F74006FC995 /* unifont12.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636625806F74006FC995 /* unifont12.mul */; };
+		84E8638025806F74006FC995 /* unifont.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636725806F74006FC995 /* unifont.mul */; };
+		84E8638125806F74006FC995 /* unifont8.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636825806F74006FC995 /* unifont8.mul */; };
+		84E8638225806F74006FC995 /* unifont10.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636925806F74006FC995 /* unifont10.mul */; };
+		84E8638425806F74006FC995 /* unifont2.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636B25806F74006FC995 /* unifont2.mul */; };
+		84E8638525806F74006FC995 /* unifont7.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636C25806F74006FC995 /* unifont7.mul */; };
+		84E8638725806F74006FC995 /* unifont5.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636E25806F74006FC995 /* unifont5.mul */; };
+		84E8638825806F74006FC995 /* unifont11.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8636F25806F74006FC995 /* unifont11.mul */; };
+		84E8638925806F74006FC995 /* unifont4.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8637025806F74006FC995 /* unifont4.mul */; };
+		84E8638F25806F74006FC995 /* unifont3.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8637625806F74006FC995 /* unifont3.mul */; };
+		84E8639225806F74006FC995 /* unifont6.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8637925806F74006FC995 /* unifont6.mul */; };
+		84E8639625806F74006FC995 /* unifont1.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8637D25806F74006FC995 /* unifont1.mul */; };
+		84E8639A25806FA5006FC995 /* Gumpidx.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8639925806FA5006FC995 /* Gumpidx.mul */; };
+		84E8639D25806FB1006FC995 /* Gumpart.mul in Resources */ = {isa = PBXBuildFile; fileRef = 84E8639C25806FB1006FC995 /* Gumpart.mul */; };
+		84E863A3258079C9006FC995 /* World.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E863A2258079C9006FC995 /* World.m */; };
+		84F9A29A2582F40800074F0B /* AsciiFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F9A2992582F40800074F0B /* AsciiFont.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84468EF0257F5F3E00C49414 /* Textures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Textures.h; sourceTree = "<group>"; };
+		84468EF2257F5FCD00C49414 /* Textures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Textures.m; sourceTree = "<group>"; };
+		844EBA14257ED31200ABDE1C /* TileData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileData.h; sourceTree = "<group>"; };
+		844EBA15257ED35300ABDE1C /* TileData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TileData.m; sourceTree = "<group>"; };
+		844EBA19257ED3E000ABDE1C /* tiledata.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = tiledata.mul; path = ../../../../../../Outlands/tiledata.mul; sourceTree = "<group>"; };
+		844EBA1C257EE04900ABDE1C /* TileFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileFlags.h; sourceTree = "<group>"; };
+		844EBA24257EE21A00ABDE1C /* Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		844EBA25257EE22800ABDE1C /* Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		8460E4F9257B074400F1449C /* IndexedMULReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexedMULReader.h; sourceTree = "<group>"; };
+		8460E4FA257B077A00F1449C /* IndexedMULReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexedMULReader.m; sourceTree = "<group>"; };
+		8460E4FE257B0B6200F1449C /* LandArt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandArt.h; sourceTree = "<group>"; };
+		8460E4FF257B0C3400F1449C /* LandArt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandArt.m; sourceTree = "<group>"; };
+		8460E507257B1A6600F1449C /* texmaps.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = texmaps.mul; path = ../../../../Second/Second/texmaps.mul; sourceTree = "<group>"; };
+		8460E50A257B1A7000F1449C /* texidx.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = texidx.mul; path = ../../../../Second/Second/texidx.mul; sourceTree = "<group>"; };
+		846DE2552584C716008D40F1 /* Hues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hues.h; sourceTree = "<group>"; };
+		846DE2562584C733008D40F1 /* Hues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hues.m; sourceTree = "<group>"; };
+		8475A124257B26ED00F43514 /* ItemArt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemArt.h; sourceTree = "<group>"; };
+		8475A125257B26FA00F43514 /* ItemArt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemArt.m; sourceTree = "<group>"; };
+		8475A129257B2B6100F43514 /* art.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = art.mul; path = ../../../../../../Outlands/art.mul; sourceTree = "<group>"; };
+		8475A12C257B2B6F00F43514 /* artidx.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = artidx.mul; path = ../../../../../../Downloads/Outlands/artidx.mul; sourceTree = "<group>"; };
+		8475A134257C7CF500F43514 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		8475A135257C7D3F00F43514 /* Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		8475A139257CB12B00F43514 /* map0.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = map0.mul; path = ../../../../../../Outlands/map0.mul; sourceTree = "<group>"; };
+		8475A13E257CEB5800F43514 /* staidx0.mul */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = staidx0.mul; path = ../../../../../../Outlands/staidx0.mul; sourceTree = "<group>"; };
+		8475A141257CEB6300F43514 /* statics0.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = statics0.mul; path = ../../../../../../Downloads/Outlands/statics0.mul; sourceTree = "<group>"; };
+		847625F72584C80C00B6B870 /* hues.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = hues.mul; path = ../../../../../../Outlands/hues.mul; sourceTree = "<group>"; };
+		847B4B7A2582CDD500D54AE0 /* Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		847B4B7C2582D0AE00D54AE0 /* Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		849BB918257AEA0E00F6F97A /* Ultima Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultima Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		849BB91B257AEA0E00F6F97A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849BB91C257AEA0E00F6F97A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849BB91E257AEA0E00F6F97A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		849BB91F257AEA0E00F6F97A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		849BB921257AEA0F00F6F97A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849BB924257AEA0F00F6F97A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		849BB926257AEA0F00F6F97A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849BB927257AEA0F00F6F97A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849BB929257AEA0F00F6F97A /* Ultima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ultima.entitlements; sourceTree = "<group>"; };
+		849BB930257AECA900F6F97A /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		849BB931257AED0600F6F97A /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		849BB938257AF90200F6F97A /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		849BB939257AF99F00F6F97A /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		84CA60AA2584CA01006C5369 /* map1.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = map1.mul; path = ../../../../../../Outlands/map1.mul; sourceTree = "<group>"; };
+		84CA60AD2584D1E3006C5369 /* radarcol.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = radarcol.mul; path = ../../../../../../Downloads/Outlands/radarcol.mul; sourceTree = "<group>"; };
+		84CA60B02584D1FA006C5369 /* RadarColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarColors.h; sourceTree = "<group>"; };
+		84CA60B12584D208006C5369 /* RadarColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarColors.m; sourceTree = "<group>"; };
+		84CA60B625855BF0006C5369 /* anim.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anim.idx; sourceTree = "<group>"; };
+		84CA60BA258563CF006C5369 /* BodyAnimationFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyAnimationFrame.h; sourceTree = "<group>"; };
+		84CA60BB258563D9006C5369 /* BodyAnimationFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyAnimationFrame.m; sourceTree = "<group>"; };
+		84CA60BF2585792F006C5369 /* ItemAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemAnimation.h; sourceTree = "<group>"; };
+		84CA60C12585B2A3006C5369 /* Bodyconv.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bodyconv.def; sourceTree = "<group>"; };
+		84CA60C42585B3AC006C5369 /* BodyConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyConversion.h; sourceTree = "<group>"; };
+		84CA60C52585B3C4006C5369 /* BodyConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyConversion.m; sourceTree = "<group>"; };
+		84CA60CA2585D799006C5369 /* anim2.mul */ = {isa = PBXFileReference; lastKnownFileType = file; path = anim2.mul; sourceTree = "<group>"; };
+		84CA60CB2585D799006C5369 /* anim2.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anim2.idx; sourceTree = "<group>"; };
+		84CA60CF2585D7A2006C5369 /* anim3.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anim3.idx; sourceTree = "<group>"; };
+		84CA60D02585D7A3006C5369 /* anim3.mul */ = {isa = PBXFileReference; lastKnownFileType = file; path = anim3.mul; sourceTree = "<group>"; };
+		84CA60D42585D7B0006C5369 /* anim4.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anim4.idx; sourceTree = "<group>"; };
+		84CA60D52585D7B3006C5369 /* anim4.mul */ = {isa = PBXFileReference; lastKnownFileType = file; path = anim4.mul; sourceTree = "<group>"; };
+		84CA60D92585D7BB006C5369 /* anim5.mul */ = {isa = PBXFileReference; lastKnownFileType = file; path = anim5.mul; sourceTree = "<group>"; };
+		84CA60DA2585D7BB006C5369 /* anim5.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anim5.idx; sourceTree = "<group>"; };
+		84CA60DE2585DE52006C5369 /* Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		84CA60DF2585DE5A006C5369 /* Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		84CA60E82586F72D006C5369 /* ItemAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemAnimation.m; sourceTree = "<group>"; };
+		84CA60F1258703E9006C5369 /* animdata.mul */ = {isa = PBXFileReference; lastKnownFileType = file; path = animdata.mul; sourceTree = "<group>"; };
+		84DFF2022583E49500A94D78 /* Font.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		84DFF2032583E4A100A94D78 /* Font.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
+		84E86350258067CF006FC995 /* UnicodeFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeFont.h; sourceTree = "<group>"; };
+		84E86352258068BB006FC995 /* UnicodeFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnicodeFont.m; sourceTree = "<group>"; };
+		84E8635725806D1F006FC995 /* BodyAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyAnimation.m; sourceTree = "<group>"; };
+		84E8635A25806D29006FC995 /* BodyAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyAnimation.h; sourceTree = "<group>"; };
+		84E8635F25806F52006FC995 /* anim.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = anim.mul; path = ../../../../../../Downloads/Outlands/anim.mul; sourceTree = "<group>"; };
+		84E8636225806F60006FC995 /* fonts.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = fonts.mul; path = ../../../../../../Outlands/fonts.mul; sourceTree = "<group>"; };
+		84E8636525806F74006FC995 /* unifont9.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont9.mul; path = ../../../../../../Outlands/unifont9.mul; sourceTree = "<group>"; };
+		84E8636625806F74006FC995 /* unifont12.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont12.mul; path = ../../../../../../Downloads/Outlands/unifont12.mul; sourceTree = "<group>"; };
+		84E8636725806F74006FC995 /* unifont.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont.mul; path = ../../../../../../Outlands/unifont.mul; sourceTree = "<group>"; };
+		84E8636825806F74006FC995 /* unifont8.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont8.mul; path = ../../../../../../Outlands/unifont8.mul; sourceTree = "<group>"; };
+		84E8636925806F74006FC995 /* unifont10.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont10.mul; path = ../../../../../../Downloads/Outlands/unifont10.mul; sourceTree = "<group>"; };
+		84E8636B25806F74006FC995 /* unifont2.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont2.mul; path = ../../../../../../Downloads/Outlands/unifont2.mul; sourceTree = "<group>"; };
+		84E8636C25806F74006FC995 /* unifont7.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont7.mul; path = ../../../../../../Outlands/unifont7.mul; sourceTree = "<group>"; };
+		84E8636E25806F74006FC995 /* unifont5.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont5.mul; path = ../../../../../../Outlands/unifont5.mul; sourceTree = "<group>"; };
+		84E8636F25806F74006FC995 /* unifont11.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont11.mul; path = ../../../../../../Downloads/Outlands/unifont11.mul; sourceTree = "<group>"; };
+		84E8637025806F74006FC995 /* unifont4.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont4.mul; path = ../../../../../../Outlands/unifont4.mul; sourceTree = "<group>"; };
+		84E8637625806F74006FC995 /* unifont3.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont3.mul; path = ../../../../../../Outlands/unifont3.mul; sourceTree = "<group>"; };
+		84E8637925806F74006FC995 /* unifont6.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont6.mul; path = ../../../../../../Downloads/Outlands/unifont6.mul; sourceTree = "<group>"; };
+		84E8637D25806F74006FC995 /* unifont1.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = unifont1.mul; path = ../../../../../../Downloads/Outlands/unifont1.mul; sourceTree = "<group>"; };
+		84E8639925806FA5006FC995 /* Gumpidx.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = Gumpidx.mul; path = ../../../../../../Outlands/Gumpidx.mul; sourceTree = "<group>"; };
+		84E8639C25806FB1006FC995 /* Gumpart.mul */ = {isa = PBXFileReference; lastKnownFileType = file; name = Gumpart.mul; path = ../../../../../../Downloads/Outlands/Gumpart.mul; sourceTree = "<group>"; };
+		84E863A1258079C0006FC995 /* World.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		84E863A2258079C9006FC995 /* World.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = World.m; sourceTree = "<group>"; };
+		84F9A2982582F3F600074F0B /* AsciiFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsciiFont.h; sourceTree = "<group>"; };
+		84F9A2992582F40800074F0B /* AsciiFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsciiFont.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849BB915257AEA0E00F6F97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8460E4F8257B072600F1449C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84F9A29E25831B2700074F0B /* Art */,
+				84F9A29D25831AD500074F0B /* Fonts */,
+				8460E506257B1A5A00F1449C /* Data */,
+				8460E4F9257B074400F1449C /* IndexedMULReader.h */,
+				8460E4FA257B077A00F1449C /* IndexedMULReader.m */,
+				8475A134257C7CF500F43514 /* Map.h */,
+				8475A135257C7D3F00F43514 /* Map.m */,
+				844EBA14257ED31200ABDE1C /* TileData.h */,
+				844EBA15257ED35300ABDE1C /* TileData.m */,
+				844EBA1C257EE04900ABDE1C /* TileFlags.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8460E506257B1A5A00F1449C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				84CA60F1258703E9006C5369 /* animdata.mul */,
+				84CA60DA2585D7BB006C5369 /* anim5.idx */,
+				84CA60D92585D7BB006C5369 /* anim5.mul */,
+				84CA60D42585D7B0006C5369 /* anim4.idx */,
+				84CA60D52585D7B3006C5369 /* anim4.mul */,
+				84CA60CF2585D7A2006C5369 /* anim3.idx */,
+				84CA60D02585D7A3006C5369 /* anim3.mul */,
+				84CA60CB2585D799006C5369 /* anim2.idx */,
+				84CA60CA2585D799006C5369 /* anim2.mul */,
+				84CA60C12585B2A3006C5369 /* Bodyconv.def */,
+				84CA60B625855BF0006C5369 /* anim.idx */,
+				84CA60AD2584D1E3006C5369 /* radarcol.mul */,
+				84CA60AA2584CA01006C5369 /* map1.mul */,
+				847625F72584C80C00B6B870 /* hues.mul */,
+				84E8639C25806FB1006FC995 /* Gumpart.mul */,
+				84E8639925806FA5006FC995 /* Gumpidx.mul */,
+				84E8636725806F74006FC995 /* unifont.mul */,
+				84E8637D25806F74006FC995 /* unifont1.mul */,
+				84E8636B25806F74006FC995 /* unifont2.mul */,
+				84E8637625806F74006FC995 /* unifont3.mul */,
+				84E8637025806F74006FC995 /* unifont4.mul */,
+				84E8636E25806F74006FC995 /* unifont5.mul */,
+				84E8637925806F74006FC995 /* unifont6.mul */,
+				84E8636C25806F74006FC995 /* unifont7.mul */,
+				84E8636825806F74006FC995 /* unifont8.mul */,
+				84E8636525806F74006FC995 /* unifont9.mul */,
+				84E8636925806F74006FC995 /* unifont10.mul */,
+				84E8636F25806F74006FC995 /* unifont11.mul */,
+				84E8636625806F74006FC995 /* unifont12.mul */,
+				84E8636225806F60006FC995 /* fonts.mul */,
+				84E8635F25806F52006FC995 /* anim.mul */,
+				844EBA19257ED3E000ABDE1C /* tiledata.mul */,
+				8475A141257CEB6300F43514 /* statics0.mul */,
+				8475A13E257CEB5800F43514 /* staidx0.mul */,
+				8475A139257CB12B00F43514 /* map0.mul */,
+				8475A12C257B2B6F00F43514 /* artidx.mul */,
+				8475A129257B2B6100F43514 /* art.mul */,
+				8460E50A257B1A7000F1449C /* texidx.mul */,
+				8460E507257B1A6600F1449C /* texmaps.mul */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		849BB90F257AEA0E00F6F97A = {
+			isa = PBXGroup;
+			children = (
+				849BB91A257AEA0E00F6F97A /* Ultima */,
+				849BB919257AEA0E00F6F97A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		849BB919257AEA0E00F6F97A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849BB918257AEA0E00F6F97A /* Ultima Online.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849BB91A257AEA0E00F6F97A /* Ultima */ = {
+			isa = PBXGroup;
+			children = (
+				84E863A0258079AD006FC995 /* Game */,
+				8460E4F8257B072600F1449C /* Resources */,
+				849BB936257AF10B00F6F97A /* Renderer */,
+				849BB935257AF0F000F6F97A /* Application */,
+				849BB921257AEA0F00F6F97A /* Assets.xcassets */,
+				849BB923257AEA0F00F6F97A /* Main.storyboard */,
+				849BB926257AEA0F00F6F97A /* Info.plist */,
+				849BB929257AEA0F00F6F97A /* Ultima.entitlements */,
+			);
+			path = Ultima;
+			sourceTree = "<group>";
+		};
+		849BB935257AF0F000F6F97A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				849BB91C257AEA0E00F6F97A /* AppDelegate.m */,
+				849BB91B257AEA0E00F6F97A /* AppDelegate.h */,
+				849BB91F257AEA0E00F6F97A /* ViewController.m */,
+				849BB927257AEA0F00F6F97A /* main.m */,
+				849BB91E257AEA0E00F6F97A /* ViewController.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		849BB936257AF10B00F6F97A /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				849BB930257AECA900F6F97A /* Renderer.h */,
+				849BB931257AED0600F6F97A /* Renderer.m */,
+				849BB938257AF90200F6F97A /* ShaderTypes.h */,
+				849BB939257AF99F00F6F97A /* Shaders.metal */,
+				84468EF0257F5F3E00C49414 /* Textures.h */,
+				84468EF2257F5FCD00C49414 /* Textures.m */,
+				84CA60DE2585DE52006C5369 /* Animation.h */,
+				84CA60DF2585DE5A006C5369 /* Animation.m */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		84E863A0258079AD006FC995 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				84E863A1258079C0006FC995 /* World.h */,
+				844EBA25257EE22800ABDE1C /* Object.m */,
+				844EBA24257EE21A00ABDE1C /* Object.h */,
+				84E863A2258079C9006FC995 /* World.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		84F9A29D25831AD500074F0B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84F9A2992582F40800074F0B /* AsciiFont.m */,
+				84F9A2982582F3F600074F0B /* AsciiFont.h */,
+				84E86352258068BB006FC995 /* UnicodeFont.m */,
+				84E86350258067CF006FC995 /* UnicodeFont.h */,
+				847B4B7C2582D0AE00D54AE0 /* Character.m */,
+				847B4B7A2582CDD500D54AE0 /* Character.h */,
+				84DFF2022583E49500A94D78 /* Font.h */,
+				84DFF2032583E4A100A94D78 /* Font.m */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84F9A29E25831B2700074F0B /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				8460E4FF257B0C3400F1449C /* LandArt.m */,
+				8475A124257B26ED00F43514 /* ItemArt.h */,
+				84E8635A25806D29006FC995 /* BodyAnimation.h */,
+				84E8635725806D1F006FC995 /* BodyAnimation.m */,
+				8475A125257B26FA00F43514 /* ItemArt.m */,
+				8460E4FE257B0B6200F1449C /* LandArt.h */,
+				846DE2552584C716008D40F1 /* Hues.h */,
+				846DE2562584C733008D40F1 /* Hues.m */,
+				84CA60B02584D1FA006C5369 /* RadarColors.h */,
+				84CA60B12584D208006C5369 /* RadarColors.m */,
+				84CA60BA258563CF006C5369 /* BodyAnimationFrame.h */,
+				84CA60BB258563D9006C5369 /* BodyAnimationFrame.m */,
+				84CA60BF2585792F006C5369 /* ItemAnimation.h */,
+				84CA60E82586F72D006C5369 /* ItemAnimation.m */,
+				84CA60C42585B3AC006C5369 /* BodyConversion.h */,
+				84CA60C52585B3C4006C5369 /* BodyConversion.m */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849BB917257AEA0E00F6F97A /* Ultima Online */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849BB92C257AEA0F00F6F97A /* Build configuration list for PBXNativeTarget "Ultima Online" */;
+			buildPhases = (
+				849BB914257AEA0E00F6F97A /* Sources */,
+				849BB915257AEA0E00F6F97A /* Frameworks */,
+				849BB916257AEA0E00F6F97A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ultima Online";
+			productName = Ultima;
+			productReference = 849BB918257AEA0E00F6F97A /* Ultima Online.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849BB910257AEA0E00F6F97A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					849BB917257AEA0E00F6F97A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 849BB913257AEA0E00F6F97A /* Build configuration list for PBXProject "Ultima" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849BB90F257AEA0E00F6F97A;
+			productRefGroup = 849BB919257AEA0E00F6F97A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849BB917257AEA0E00F6F97A /* Ultima Online */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849BB916257AEA0E00F6F97A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8475A12D257B2B6F00F43514 /* artidx.mul in Resources */,
+				847625F82584C80C00B6B870 /* hues.mul in Resources */,
+				84E8637F25806F74006FC995 /* unifont12.mul in Resources */,
+				84CA60F2258703E9006C5369 /* animdata.mul in Resources */,
+				84E8638725806F74006FC995 /* unifont5.mul in Resources */,
+				84E8638F25806F74006FC995 /* unifont3.mul in Resources */,
+				84E8636025806F52006FC995 /* anim.mul in Resources */,
+				84E8637E25806F74006FC995 /* unifont9.mul in Resources */,
+				84CA60B725855BF0006C5369 /* anim.idx in Resources */,
+				84E8636325806F60006FC995 /* fonts.mul in Resources */,
+				84CA60AB2584CA01006C5369 /* map1.mul in Resources */,
+				84E8639D25806FB1006FC995 /* Gumpart.mul in Resources */,
+				84CA60CC2585D799006C5369 /* anim2.mul in Resources */,
+				84CA60D12585D7A3006C5369 /* anim3.idx in Resources */,
+				8460E50B257B1A7000F1449C /* texidx.mul in Resources */,
+				84CA60D72585D7B3006C5369 /* anim4.mul in Resources */,
+				84CA60CD2585D799006C5369 /* anim2.idx in Resources */,
+				849BB922257AEA0F00F6F97A /* Assets.xcassets in Resources */,
+				84CA60C22585B2A3006C5369 /* Bodyconv.def in Resources */,
+				84E8639225806F74006FC995 /* unifont6.mul in Resources */,
+				8475A12A257B2B6100F43514 /* art.mul in Resources */,
+				84CA60AE2584D1E3006C5369 /* radarcol.mul in Resources */,
+				84E8639A25806FA5006FC995 /* Gumpidx.mul in Resources */,
+				8475A13F257CEB5800F43514 /* staidx0.mul in Resources */,
+				849BB925257AEA0F00F6F97A /* Main.storyboard in Resources */,
+				84E8639625806F74006FC995 /* unifont1.mul in Resources */,
+				84E8638025806F74006FC995 /* unifont.mul in Resources */,
+				84CA60DB2585D7BB006C5369 /* anim5.mul in Resources */,
+				844EBA1A257ED3E000ABDE1C /* tiledata.mul in Resources */,
+				84E8638425806F74006FC995 /* unifont2.mul in Resources */,
+				8475A13A257CB12B00F43514 /* map0.mul in Resources */,
+				84E8638225806F74006FC995 /* unifont10.mul in Resources */,
+				84CA60D22585D7A3006C5369 /* anim3.mul in Resources */,
+				84E8638125806F74006FC995 /* unifont8.mul in Resources */,
+				84E8638525806F74006FC995 /* unifont7.mul in Resources */,
+				8460E508257B1A6600F1449C /* texmaps.mul in Resources */,
+				84CA60D62585D7B3006C5369 /* anim4.idx in Resources */,
+				84E8638825806F74006FC995 /* unifont11.mul in Resources */,
+				84E8638925806F74006FC995 /* unifont4.mul in Resources */,
+				84CA60DC2585D7BB006C5369 /* anim5.idx in Resources */,
+				8475A142257CEB6300F43514 /* statics0.mul in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849BB914257AEA0E00F6F97A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CA60B22584D208006C5369 /* RadarColors.m in Sources */,
+				84468EF3257F5FCD00C49414 /* Textures.m in Sources */,
+				844EBA26257EE22800ABDE1C /* Object.m in Sources */,
+				84CA60C62585B3C4006C5369 /* BodyConversion.m in Sources */,
+				8475A136257C7D3F00F43514 /* Map.m in Sources */,
+				849BB932257AED0600F6F97A /* Renderer.m in Sources */,
+				846DE2572584C733008D40F1 /* Hues.m in Sources */,
+				8475A126257B26FA00F43514 /* ItemArt.m in Sources */,
+				84E8635825806D1F006FC995 /* BodyAnimation.m in Sources */,
+				84E863A3258079C9006FC995 /* World.m in Sources */,
+				844EBA16257ED35300ABDE1C /* TileData.m in Sources */,
+				8460E4FB257B077A00F1449C /* IndexedMULReader.m in Sources */,
+				849BB920257AEA0E00F6F97A /* ViewController.m in Sources */,
+				84DFF2042583E4A100A94D78 /* Font.m in Sources */,
+				849BB928257AEA0F00F6F97A /* main.m in Sources */,
+				849BB91D257AEA0E00F6F97A /* AppDelegate.m in Sources */,
+				849BB93A257AF99F00F6F97A /* Shaders.metal in Sources */,
+				84CA60E92586F72D006C5369 /* ItemAnimation.m in Sources */,
+				84CA60E02585DE5A006C5369 /* Animation.m in Sources */,
+				84F9A29A2582F40800074F0B /* AsciiFont.m in Sources */,
+				847B4B7D2582D0AE00D54AE0 /* Character.m in Sources */,
+				84E86353258068BB006FC995 /* UnicodeFont.m in Sources */,
+				8460E500257B0C3400F1449C /* LandArt.m in Sources */,
+				84CA60BC258563D9006C5369 /* BodyAnimationFrame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		849BB923257AEA0F00F6F97A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849BB924257AEA0F00F6F97A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849BB92A257AEA0F00F6F97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		849BB92B257AEA0F00F6F97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		849BB92D257AEA0F00F6F97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ultima/Ultima.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJQVYQLZDN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Ultima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.tsul.Ultima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		849BB92E257AEA0F00F6F97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ultima/Ultima.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LJQVYQLZDN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Ultima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.tsul.Ultima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849BB913257AEA0E00F6F97A /* Build configuration list for PBXProject "Ultima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849BB92A257AEA0F00F6F97A /* Debug */,
+				849BB92B257AEA0F00F6F97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849BB92C257AEA0F00F6F97A /* Build configuration list for PBXNativeTarget "Ultima Online" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849BB92D257AEA0F00F6F97A /* Debug */,
+				849BB92E257AEA0F00F6F97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849BB910257AEA0E00F6F97A /* Project object */;
+}
